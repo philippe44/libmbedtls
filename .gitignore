@@ -43,6 +43,7 @@
 # Kernel Module Compile Results
 *.mod*
 *.cmd
+*.sh
 .tmp_versions/
 modules.order
 Module.symvers
@@ -52,3 +53,5 @@ dkms.conf
 # Misc files
 *.bak
 *.save
+!build.cmd
+!build.sh
