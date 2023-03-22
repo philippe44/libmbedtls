@@ -33,7 +33,7 @@ if exist %target% (
 robocopy %build%\library\Release %target% *.lib /NDL /NJH /NJS /nc /ns /np
 REM robocopy %build%\lib\Debug %target% *.lib /NDL /NJH /NJS /nc /ns /np
 for %%f in (%target%\*.lib) do ren %%f lib%%~nf.lib
-lib.exe /OUT:%target%/libmedtls_.lib %target%/*.lib
+lib.exe /OUT:%target%/_libmedtls.lib %target%/*.lib
 
 robocopy mbedtls\include targets\include *.h /NDL /NJH /NJS /nc /ns /np
 
