@@ -59,7 +59,7 @@ for cc in ${candidates[@]}; do
 done
 
 pwd=$(pwd)
-library=libmbedtls_.a
+library=_libmbedtls.a
 
 # then iterate selected platforms/compilers
 for cc in ${compilers[@]}
@@ -87,7 +87,7 @@ do
 
 	# copy and concatenate all in a thin (if possible)
 	rm -rf $target
-       	mkdir -p $_  
+    mkdir -p $_  
 	cp -u $build/library/*.a $_
 
 	rm -f $target/$library
