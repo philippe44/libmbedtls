@@ -39,8 +39,6 @@ set(PACKAGE_EXT a)
 endif()
 
 foreach(ITEM ${PACKAGE_ITEMS})
-	message(STATUS "adding item ${ITEM}")
-
 	add_library(${CMAKE_FIND_PACKAGE_NAME}::${ITEM} STATIC IMPORTED)
 
 if(PACKAGE_MULTI_INC)
