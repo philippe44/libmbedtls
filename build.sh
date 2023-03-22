@@ -23,7 +23,8 @@ declare -A cflags=( [sparc64-linux-gnu-gcc]="-mcpu=v7" \
                     [mips-linux-gnu-gcc]="-march=mips32" \
                     [armv5-linux-gnueabi-gcc]="-march=armv5t -mfloat-abi=soft" \
                     [powerpc-linux-gnu-gcc]="-m32" \
-                    [x86_64-solaris-gnu-gcc]=-mno-direct-extern-access )
+	    )
+             #       [x86_64-solaris-gnu-gcc]=-mno-direct-extern-access )
 					
 declare -a compilers					
 
