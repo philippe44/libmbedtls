@@ -22,9 +22,7 @@ declare -A alias=( [x86-linux-gnu-gcc]=i686-stretch-linux-gnu-gcc \
 declare -A cflags=( [sparc64-linux-gnu-gcc]="-mcpu=v7" \
                     [mips-linux-gnu-gcc]="-march=mips32" \
                     [armv5-linux-gnueabi-gcc]="-march=armv5t -mfloat-abi=soft" \
-                    [powerpc-linux-gnu-gcc]="-m32" \
-	    )
-             #       [x86_64-solaris-gnu-gcc]=-mno-direct-extern-access )
+                    [powerpc-linux-gnu-gcc]="-m32" )
 					
 declare -a compilers					
 
